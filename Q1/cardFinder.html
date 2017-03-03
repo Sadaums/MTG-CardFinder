@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script defer src="JS/coolJS.js"></script>
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <script type="text/javascript" src='JS/storage.js'>
+    </script>
+
+
+
+    <meta charset="utf-8">
+    <title>MTG Card Finder</title>
+</head>
+<header>
+
+    <nav class="blue darken-2" role="navigation">
+        <div class="nav-wrapper container "><a id="logo-container" href="index.html" class="brand-logo white-text center"><b>MTG Card Finder</b></a>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="section no-pad-bot">
+
+        <br>
+        <div class="row">
+          <div class="col s12 redBox">
+          <div class="col s4 push-s2">
+
+              <h5 class="center light-green-text text-darken-2"><u>See Alternate Artwork!</u></h5>
+
+                <p class="visableText">With so many different artworks for so many different cards, this app will help you find your favorite by allowing a side-by-side visual comparison so you can find your favorite printing of your favorite card!</p>
+
+          </div>
+
+          <div class="col s4 push-s2">
+                <h5 class="center light-green-text text-darken-2"><u>Find ANY Card!</u></h5>
+
+                  <p class="visableText">Magic the Gathering has been around for years... and that means there are a lot of cards that have been printed. Understanding every card is hard, so this app has your back for understanding any card that has been printed!</p>
+
+          </div>
+          </div>
+
+
+        </div>
+        <div class="col s12 container mainBackground">
+        </div>
+
+        <div class="row">
+            <div class="col s9 inputContainer">
+                <ul>
+                    <li class="input-field col s6 visableText">
+                        <input id="name" type="text" class="validate" placeholder="ex. Gravecrawler, Black Lotus, etc.">
+                        <label for="name">Card Name</label>
+                    </li>
+
+
+                    <li class="input-field col s6 visableText">
+                        <select multiple id="colorIdentity">
+                              <option value="" disabled selected class="defaultText">Choose your Color Type</option>
+                              <option value="R">Red</option>
+                              <option value="U">Blue</option>
+                              <option value="B">Black</option>
+                              <option value="W">White</option>
+                              <option value="G">Green</option>
+                            </select>
+                        <label>Card Color</label>
+                    </li>
+                    <li class="input-field col s6 visableText">
+                        <select multiple id="types">
+                              <option value="" disabled selected class="defaultText">Choose your Card Type</option>
+                              <option value="Instant">Instant</option>
+                              <option value="Sorcery">Sorcery</option>
+                              <option value="Artifact">Artifact</option>
+                              <option value="Creature">Creature</option>
+                              <option value="Enchantment">Enchantment</option>
+                              <option value="Land">Land</option>
+                              <option value="Planeswalker">Planeswalker</option>
+                            </select>
+                        <label>Card Type</label>
+                    </li>
+                    <li class="input-field col s6 visableText">
+                        <input id="subtypes" type="text" class="validate" placeholder="ex. Equipment, Aura, Angel, etc.">
+                        <label for="subtypes">Card Subtype</label>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col s3">
+                <br><br>
+                <div class="col s7 offset-s5">
+                    <a id='search-button' class="btn-floating btn-large waves-effect waves-light light-green darken-4 center"><i class="material-icons">send</i></a>
+                </div>
+                <div class="col s7 offset-s4">
+                    <p class="visableText">Find Your Cards!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 cardCollection">
+        <div class="row">
+            <ul id="cardGrid">
+                <!-- <li class="cardSelector col s2">
+                    <div class="card-image">
+                        <img class="materialboxed" data-caption='response goes here!' width="200" src="./photos/MTG-BackOfCard.jpg">
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- rest of body goes here -->
+    <footer class="page-footer light-green darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue darken-2">
+            <div class="container">2017 Kevin Danger</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
